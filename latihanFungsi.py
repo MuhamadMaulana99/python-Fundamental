@@ -24,13 +24,13 @@ def header():
 def inputUser():
     lebar  = int(input('Masukan Nilai lebar : '))
     panjang  = int(input('Masukan Nilai panjang: '))
-    return lebar, panjang
+    return lebar, panjang   
 
-def hitungLuas(lebar, panjang):
+def hitungLuas(lebar:int, panjang: int) -> int:
     luas = panjang * lebar
     return luas
 
-def hitungKeliling(lebar, panjang):
+def hitungKeliling(lebar:int, panjang: int) -> int:
     keliling = 2*(panjang+lebar)
     return keliling
 
@@ -46,7 +46,7 @@ while True:
     if isContinue == 'n':
         break
 print('Program Selesai')    
-        
-        
+
+
             
         
